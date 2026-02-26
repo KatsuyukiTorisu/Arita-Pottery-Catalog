@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "companies": "Companies",
+    "login": "Login",
+    "signup": "Sign Up",
+    "account": "My Account",
+    "logout": "Logout",
+    "companyPortal": "Company Portal"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover Arita Pottery",
+      "subtitle": "Explore centuries of ceramic artistry from Arita, Japan's porcelain capital.",
+      "explore": "Explore Products",
+      "join": "Become a Member"
+    },
+    "features": {
+      "exclusive": "Exclusive Access",
+      "exclusiveDesc": "Members enjoy year-round access to our full catalog with pricing details.",
+      "market": "Arita Pottery Market",
+      "marketDesc": "Visit us April 29 – May 5 for special seasonal open access.",
+      "authentic": "Authentic Craftsmanship",
+      "authenticDesc": "Directly sourced from Arita's finest pottery companies and kilns."
+    }
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "Explore our collection of Arita pottery",
+    "empty": "No products available",
+    "price": "Price",
+    "viewDetails": "View Details",
+    "membersOnly": "Members Only",
+    "category": "Category",
+    "tags": "Tags",
+    "published": "Published",
+    "draft": "Draft"
+  },
+  "companies": {
+    "title": "Companies",
+    "subtitle": "Meet the artisans behind Arita pottery",
+    "empty": "No companies listed yet",
+    "viewDetails": "View Details",
+    "location": "Location",
+    "products": "Products"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "phone": "Phone Number",
+      "password": "Password",
+      "submit": "Login",
+      "noAccount": "Don't have an account?",
+      "signupLink": "Sign up",
+      "error": "Invalid phone number or password",
+      "unverified": "Please verify your email before logging in"
+    },
+    "signup": {
+      "title": "Create Account",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "password": "Password",
+      "age": "Age",
+      "gender": "Gender",
+      "address": "Address",
+      "occupation": "Occupation",
+      "submit": "Create Account",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Login",
+      "success": "Account created! Please check your email to verify your account.",
+      "error": "Failed to create account. Please try again."
+    },
+    "verify": {
+      "title": "Email Verification",
+      "success": "Your email has been verified! You can now login.",
+      "error": "Invalid or expired verification link. Please sign up again.",
+      "loading": "Verifying your email..."
+    }
+  },
+  "gate": {
+    "title": "Members Only",
+    "subtitle": "This content is available to members year-round, or to all visitors during the Arita Pottery Market.",
+    "loginCta": "Login to your account",
+    "signupCta": "Become a member",
+    "or": "or",
+    "marketNote": "Free access during Arita Pottery Market: April 29 – May 5"
+  },
+  "account": {
+    "title": "My Account",
+    "membershipId": "Membership ID",
+    "profile": "Profile",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "age": "Age",
+    "gender": "Gender",
+    "address": "Address",
+    "occupation": "Occupation",
+    "save": "Save Changes",
+    "saved": "Changes saved!",
+    "role": "Account Type"
+  },
+  "company": {
+    "dashboard": {
+      "title": "Company Dashboard",
+      "welcome": "Welcome to your company portal",
+      "totalProducts": "Total Products",
+      "published": "Published",
+      "drafts": "Drafts"
+    },
+    "products": {
+      "title": "Manage Products",
+      "add": "Add Product",
+      "edit": "Edit",
+      "delete": "Delete",
+      "name": "Product Name",
+      "description": "Description",
+      "price": "Price (JPY)",
+      "category": "Category",
+      "tags": "Tags (comma-separated)",
+      "images": "Image URLs (one per line)",
+      "visibility": "Visibility",
+      "published": "Published",
+      "save": "Save Product",
+      "cancel": "Cancel",
+      "deleteConfirm": "Are you sure you want to delete this product?"
+    },
+    "settings": {
+      "title": "Company Settings",
+      "companyName": "Company Name",
+      "description": "Description",
+      "location": "Location",
+      "images": "Image URLs (one per line)",
+      "save": "Save Settings",
+      "saved": "Settings saved!"
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "products": "Products",
+      "settings": "Settings"
+    }
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "subtitle": "This feature is currently under development. Stay tuned!",
+    "back": "Go Back"
+  },
+  "footer": {
+    "copyright": "© 2025 Arita Catalog. All rights reserved.",
+    "comingSoon": "Coming Soon",
+    "purchase": "Online Purchase",
+    "booking": "Kiln Booking",
+    "chat": "Chat Support"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred. Please try again.",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "required": "This field is required",
+    "public": "Public",
+    "membersOnly": "Members Only",
+    "whitelist": "Whitelist Only"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "首頁",
+    "products": "產品",
+    "companies": "陶藝公司",
+    "login": "登入",
+    "signup": "註冊",
+    "account": "我的帳戶",
+    "logout": "登出",
+    "companyPortal": "企業入口"
+  },
+  "home": {
+    "hero": {
+      "title": "探索有田燒陶瓷",
+      "subtitle": "探索來自日本瓷器之都有田的數百年陶藝。",
+      "explore": "瀏覽產品",
+      "join": "成為會員"
+    },
+    "features": {
+      "exclusive": "專屬訪問",
+      "exclusiveDesc": "會員全年享有完整目錄的訪問權限，包含價格資訊。",
+      "market": "有田陶器市",
+      "marketDesc": "4月29日至5月5日特別季節，所有訪客均可訪問。",
+      "authentic": "正宗工藝",
+      "authenticDesc": "直接從有田最優秀的陶瓷公司和窯場採購。"
+    }
+  },
+  "products": {
+    "title": "產品列表",
+    "subtitle": "探索我們的有田燒藏品",
+    "empty": "暫無產品",
+    "price": "價格",
+    "viewDetails": "查看詳情",
+    "membersOnly": "僅限會員",
+    "category": "類別",
+    "tags": "標籤",
+    "published": "已發布",
+    "draft": "草稿"
+  },
+  "companies": {
+    "title": "陶藝公司",
+    "subtitle": "認識有田燒背後的工匠",
+    "empty": "暫無公司登記",
+    "viewDetails": "查看詳情",
+    "location": "位置",
+    "products": "產品"
+  },
+  "auth": {
+    "login": {
+      "title": "登入",
+      "phone": "電話號碼",
+      "password": "密碼",
+      "submit": "登入",
+      "noAccount": "還沒有帳戶？",
+      "signupLink": "立即註冊",
+      "error": "電話號碼或密碼不正確",
+      "unverified": "登入前請先驗證您的電子郵件"
+    },
+    "signup": {
+      "title": "建立帳戶",
+      "name": "全名",
+      "email": "電子郵件地址",
+      "phone": "電話號碼",
+      "password": "密碼",
+      "age": "年齡",
+      "gender": "性別",
+      "address": "地址",
+      "occupation": "職業",
+      "submit": "建立帳戶",
+      "hasAccount": "已有帳戶？",
+      "loginLink": "登入",
+      "success": "帳戶已建立！請查看您的電子郵件以驗證帳戶。",
+      "error": "建立帳戶失敗，請重試。"
+    },
+    "verify": {
+      "title": "電子郵件驗證",
+      "success": "您的電子郵件已驗證！現在可以登入。",
+      "error": "驗證連結無效或已過期，請重新註冊。",
+      "loading": "正在驗證您的電子郵件..."
+    }
+  },
+  "gate": {
+    "title": "僅限會員",
+    "subtitle": "此內容全年向會員開放，或在有田陶器市期間向所有訪客開放。",
+    "loginCta": "登入您的帳戶",
+    "signupCta": "成為會員",
+    "or": "或",
+    "marketNote": "有田陶器市期間免費訪問：4月29日 – 5月5日"
+  },
+  "account": {
+    "title": "我的帳戶",
+    "membershipId": "會員ID",
+    "profile": "個人資料",
+    "name": "全名",
+    "email": "電子郵件",
+    "phone": "電話",
+    "age": "年齡",
+    "gender": "性別",
+    "address": "地址",
+    "occupation": "職業",
+    "save": "儲存變更",
+    "saved": "已儲存！",
+    "role": "帳戶類型"
+  },
+  "company": {
+    "dashboard": {
+      "title": "企業儀表板",
+      "welcome": "歡迎來到您的企業入口",
+      "totalProducts": "產品總數",
+      "published": "已發布",
+      "drafts": "草稿"
+    },
+    "products": {
+      "title": "管理產品",
+      "add": "新增產品",
+      "edit": "編輯",
+      "delete": "刪除",
+      "name": "產品名稱",
+      "description": "描述",
+      "price": "價格（日圓）",
+      "category": "類別",
+      "tags": "標籤（逗號分隔）",
+      "images": "圖片URL（每行一個）",
+      "visibility": "可見性",
+      "published": "發布",
+      "save": "儲存產品",
+      "cancel": "取消",
+      "deleteConfirm": "確定要刪除此產品嗎？"
+    },
+    "settings": {
+      "title": "企業設定",
+      "companyName": "企業名稱",
+      "description": "描述",
+      "location": "位置",
+      "images": "圖片URL（每行一個）",
+      "save": "儲存設定",
+      "saved": "設定已儲存！"
+    },
+    "nav": {
+      "dashboard": "儀表板",
+      "products": "產品",
+      "settings": "設定"
+    }
+  },
+  "comingSoon": {
+    "title": "即將推出",
+    "subtitle": "此功能正在開發中，敬請期待！",
+    "back": "返回"
+  },
+  "footer": {
+    "copyright": "© 2025 有田陶瓷目錄。版權所有。",
+    "comingSoon": "即將推出",
+    "purchase": "線上購買",
+    "booking": "窯場預約",
+    "chat": "聊天支援"
+  },
+  "common": {
+    "loading": "載入中...",
+    "error": "發生錯誤，請重試。",
+    "success": "成功",
+    "cancel": "取消",
+    "save": "儲存",
+    "edit": "編輯",
+    "delete": "刪除",
+    "back": "返回",
+    "required": "此欄位為必填",
+    "public": "公開",
+    "membersOnly": "僅限會員",
+    "whitelist": "僅限白名單"
+  }
+}

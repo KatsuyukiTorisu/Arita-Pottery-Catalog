@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "products": "Produk",
+    "companies": "Perusahaan",
+    "login": "Masuk",
+    "signup": "Daftar",
+    "account": "Akun Saya",
+    "logout": "Keluar",
+    "companyPortal": "Portal Perusahaan"
+  },
+  "home": {
+    "hero": {
+      "title": "Temukan Keramik Arita",
+      "subtitle": "Jelajahi kesenian keramik berabad-abad dari Arita, ibu kota porselen Jepang.",
+      "explore": "Jelajahi Produk",
+      "join": "Jadi Anggota"
+    },
+    "features": {
+      "exclusive": "Akses Eksklusif",
+      "exclusiveDesc": "Anggota menikmati akses sepanjang tahun ke katalog lengkap dengan detail harga.",
+      "market": "Pasar Keramik Arita",
+      "marketDesc": "Kunjungi kami 29 April – 5 Mei untuk akses musiman khusus.",
+      "authentic": "Kerajinan Autentik",
+      "authenticDesc": "Langsung bersumber dari perusahaan keramik terbaik Arita."
+    }
+  },
+  "products": {
+    "title": "Produk",
+    "subtitle": "Jelajahi koleksi keramik Arita kami",
+    "empty": "Tidak ada produk tersedia",
+    "price": "Harga",
+    "viewDetails": "Lihat Detail",
+    "membersOnly": "Hanya Anggota",
+    "category": "Kategori",
+    "tags": "Tag",
+    "published": "Diterbitkan",
+    "draft": "Draf"
+  },
+  "companies": {
+    "title": "Perusahaan",
+    "subtitle": "Temui pengrajin di balik keramik Arita",
+    "empty": "Belum ada perusahaan terdaftar",
+    "viewDetails": "Lihat Detail",
+    "location": "Lokasi",
+    "products": "Produk"
+  },
+  "auth": {
+    "login": {
+      "title": "Masuk",
+      "phone": "Nomor Telepon",
+      "password": "Kata Sandi",
+      "submit": "Masuk",
+      "noAccount": "Belum punya akun?",
+      "signupLink": "Daftar",
+      "error": "Nomor telepon atau kata sandi tidak valid",
+      "unverified": "Harap verifikasi email Anda sebelum masuk"
+    },
+    "signup": {
+      "title": "Buat Akun",
+      "name": "Nama Lengkap",
+      "email": "Alamat Email",
+      "phone": "Nomor Telepon",
+      "password": "Kata Sandi",
+      "age": "Usia",
+      "gender": "Jenis Kelamin",
+      "address": "Alamat",
+      "occupation": "Pekerjaan",
+      "submit": "Buat Akun",
+      "hasAccount": "Sudah punya akun?",
+      "loginLink": "Masuk",
+      "success": "Akun berhasil dibuat! Silakan cek email Anda untuk memverifikasi akun.",
+      "error": "Gagal membuat akun. Silakan coba lagi."
+    },
+    "verify": {
+      "title": "Verifikasi Email",
+      "success": "Email Anda telah diverifikasi! Anda sekarang dapat masuk.",
+      "error": "Tautan verifikasi tidak valid atau sudah kedaluwarsa. Silakan daftar kembali.",
+      "loading": "Memverifikasi email Anda..."
+    }
+  },
+  "gate": {
+    "title": "Hanya Anggota",
+    "subtitle": "Konten ini tersedia untuk anggota sepanjang tahun, atau untuk semua pengunjung selama Pasar Keramik Arita.",
+    "loginCta": "Masuk ke akun Anda",
+    "signupCta": "Jadi anggota",
+    "or": "atau",
+    "marketNote": "Akses gratis selama Pasar Arita: 29 April – 5 Mei"
+  },
+  "account": {
+    "title": "Akun Saya",
+    "membershipId": "ID Keanggotaan",
+    "profile": "Profil",
+    "name": "Nama Lengkap",
+    "email": "Email",
+    "phone": "Telepon",
+    "age": "Usia",
+    "gender": "Jenis Kelamin",
+    "address": "Alamat",
+    "occupation": "Pekerjaan",
+    "save": "Simpan Perubahan",
+    "saved": "Perubahan tersimpan!",
+    "role": "Jenis Akun"
+  },
+  "company": {
+    "dashboard": {
+      "title": "Dasbor Perusahaan",
+      "welcome": "Selamat datang di portal perusahaan Anda",
+      "totalProducts": "Total Produk",
+      "published": "Diterbitkan",
+      "drafts": "Draf"
+    },
+    "products": {
+      "title": "Kelola Produk",
+      "add": "Tambah Produk",
+      "edit": "Edit",
+      "delete": "Hapus",
+      "name": "Nama Produk",
+      "description": "Deskripsi",
+      "price": "Harga (JPY)",
+      "category": "Kategori",
+      "tags": "Tag (pisahkan dengan koma)",
+      "images": "URL Gambar (satu per baris)",
+      "visibility": "Visibilitas",
+      "published": "Terbitkan",
+      "save": "Simpan Produk",
+      "cancel": "Batal",
+      "deleteConfirm": "Apakah Anda yakin ingin menghapus produk ini?"
+    },
+    "settings": {
+      "title": "Pengaturan Perusahaan",
+      "companyName": "Nama Perusahaan",
+      "description": "Deskripsi",
+      "location": "Lokasi",
+      "images": "URL Gambar (satu per baris)",
+      "save": "Simpan Pengaturan",
+      "saved": "Pengaturan tersimpan!"
+    },
+    "nav": {
+      "dashboard": "Dasbor",
+      "products": "Produk",
+      "settings": "Pengaturan"
+    }
+  },
+  "comingSoon": {
+    "title": "Segera Hadir",
+    "subtitle": "Fitur ini sedang dalam pengembangan. Nantikan!",
+    "back": "Kembali"
+  },
+  "footer": {
+    "copyright": "© 2025 Arita Catalog. Hak cipta dilindungi.",
+    "comingSoon": "Segera",
+    "purchase": "Pembelian Online",
+    "booking": "Pemesanan Kiln",
+    "chat": "Dukungan Chat"
+  },
+  "common": {
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan. Silakan coba lagi.",
+    "success": "Berhasil",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "edit": "Edit",
+    "delete": "Hapus",
+    "back": "Kembali",
+    "required": "Bidang ini wajib diisi",
+    "public": "Publik",
+    "membersOnly": "Hanya Anggota",
+    "whitelist": "Hanya Daftar Putih"
+  }
+}

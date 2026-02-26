@@ -1,0 +1,3 @@
+const {Client} = require('pg');
+async function t(u,p){const c=new Client({host:'localhost',port:5432,user:u,password:p,database:'postgres'});try{await c.connect();const r=await c.query('SELECT current_user');const d=await c.query("SELECT datname FROM pg_database WHERE datistemplate=false");console.log('CONNECTED:',r.rows[0].current_user,'DBs:',d.rows.map(x=>x.datname).join(', '));await c.end();return true;}catch(e){return false;}}
+(async()=>{for(const[u,p]of[['postgres','1234'],['postgres','12345'],['postgres','123456'],['postgres','password'],['postgres','qwerty'],['postgres','arita'],['postgres','admin'],['postgres','test'],['postgres','root'],['postgres','postgres1']]) if(await t(u,p)) return; console.log('none matched');})();

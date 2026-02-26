@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "companies": "Unternehmen",
+    "login": "Anmelden",
+    "signup": "Registrieren",
+    "account": "Mein Konto",
+    "logout": "Abmelden",
+    "companyPortal": "Unternehmensportal"
+  },
+  "home": {
+    "hero": {
+      "title": "Arita-Keramik entdecken",
+      "subtitle": "Entdecken Sie Jahrhunderte der Keramikkunst aus Arita, Japans Porzellanhauptstadt.",
+      "explore": "Produkte erkunden",
+      "join": "Mitglied werden"
+    },
+    "features": {
+      "exclusive": "Exklusiver Zugang",
+      "exclusiveDesc": "Mitglieder genießen ganzjährig Zugang zum vollständigen Katalog mit Preisinformationen.",
+      "market": "Arita Keramikmarkt",
+      "marketDesc": "Besuchen Sie uns vom 29. April bis 5. Mai für besonderen saisonalen Zugang.",
+      "authentic": "Echtes Handwerk",
+      "authenticDesc": "Direkt von Aritas besten Töpfereien und Brennöfen bezogen."
+    }
+  },
+  "products": {
+    "title": "Produkte",
+    "subtitle": "Unsere Arita-Keramik-Kollektion erkunden",
+    "empty": "Keine Produkte verfügbar",
+    "price": "Preis",
+    "viewDetails": "Details anzeigen",
+    "membersOnly": "Nur für Mitglieder",
+    "category": "Kategorie",
+    "tags": "Tags",
+    "published": "Veröffentlicht",
+    "draft": "Entwurf"
+  },
+  "companies": {
+    "title": "Unternehmen",
+    "subtitle": "Treffen Sie die Handwerker hinter der Arita-Keramik",
+    "empty": "Keine Unternehmen aufgeführt",
+    "viewDetails": "Details anzeigen",
+    "location": "Standort",
+    "products": "Produkte"
+  },
+  "auth": {
+    "login": {
+      "title": "Anmelden",
+      "phone": "Telefonnummer",
+      "password": "Passwort",
+      "submit": "Anmelden",
+      "noAccount": "Kein Konto?",
+      "signupLink": "Registrieren",
+      "error": "Ungültige Telefonnummer oder Passwort",
+      "unverified": "Bitte bestätigen Sie Ihre E-Mail vor der Anmeldung"
+    },
+    "signup": {
+      "title": "Konto erstellen",
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "password": "Passwort",
+      "age": "Alter",
+      "gender": "Geschlecht",
+      "address": "Adresse",
+      "occupation": "Beruf",
+      "submit": "Konto erstellen",
+      "hasAccount": "Bereits ein Konto?",
+      "loginLink": "Anmelden",
+      "success": "Konto erstellt! Bitte überprüfen Sie Ihre E-Mail, um Ihr Konto zu bestätigen.",
+      "error": "Konto konnte nicht erstellt werden. Bitte erneut versuchen."
+    },
+    "verify": {
+      "title": "E-Mail-Verifizierung",
+      "success": "Ihre E-Mail wurde bestätigt! Sie können sich jetzt anmelden.",
+      "error": "Ungültiger oder abgelaufener Bestätigungslink. Bitte erneut registrieren.",
+      "loading": "E-Mail wird verifiziert..."
+    }
+  },
+  "gate": {
+    "title": "Nur für Mitglieder",
+    "subtitle": "Dieser Inhalt ist das ganze Jahr für Mitglieder zugänglich oder für alle Besucher während des Arita Keramikmarkts.",
+    "loginCta": "In Ihr Konto einloggen",
+    "signupCta": "Mitglied werden",
+    "or": "oder",
+    "marketNote": "Freier Zugang während des Arita Keramikmarkts: 29. April – 5. Mai"
+  },
+  "account": {
+    "title": "Mein Konto",
+    "membershipId": "Mitglieds-ID",
+    "profile": "Profil",
+    "name": "Vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "age": "Alter",
+    "gender": "Geschlecht",
+    "address": "Adresse",
+    "occupation": "Beruf",
+    "save": "Änderungen speichern",
+    "saved": "Änderungen gespeichert!",
+    "role": "Kontotyp"
+  },
+  "company": {
+    "dashboard": {
+      "title": "Unternehmens-Dashboard",
+      "welcome": "Willkommen in Ihrem Unternehmensportal",
+      "totalProducts": "Gesamtprodukte",
+      "published": "Veröffentlicht",
+      "drafts": "Entwürfe"
+    },
+    "products": {
+      "title": "Produkte verwalten",
+      "add": "Produkt hinzufügen",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "name": "Produktname",
+      "description": "Beschreibung",
+      "price": "Preis (JPY)",
+      "category": "Kategorie",
+      "tags": "Tags (kommagetrennt)",
+      "images": "Bild-URLs (eine pro Zeile)",
+      "visibility": "Sichtbarkeit",
+      "published": "Veröffentlichen",
+      "save": "Produkt speichern",
+      "cancel": "Abbrechen",
+      "deleteConfirm": "Möchten Sie dieses Produkt wirklich löschen?"
+    },
+    "settings": {
+      "title": "Unternehmenseinstellungen",
+      "companyName": "Unternehmensname",
+      "description": "Beschreibung",
+      "location": "Standort",
+      "images": "Bild-URLs (eine pro Zeile)",
+      "save": "Einstellungen speichern",
+      "saved": "Einstellungen gespeichert!"
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "products": "Produkte",
+      "settings": "Einstellungen"
+    }
+  },
+  "comingSoon": {
+    "title": "Demnächst verfügbar",
+    "subtitle": "Diese Funktion ist derzeit in Entwicklung. Bleiben Sie gespannt!",
+    "back": "Zurück"
+  },
+  "footer": {
+    "copyright": "© 2025 Arita Catalog. Alle Rechte vorbehalten.",
+    "comingSoon": "Demnächst",
+    "purchase": "Online-Kauf",
+    "booking": "Brennofen-Buchung",
+    "chat": "Chat-Support"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten. Bitte erneut versuchen.",
+    "success": "Erfolg",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "back": "Zurück",
+    "required": "Dieses Feld ist erforderlich",
+    "public": "Öffentlich",
+    "membersOnly": "Nur für Mitglieder",
+    "whitelist": "Nur Whitelist"
+  }
+}

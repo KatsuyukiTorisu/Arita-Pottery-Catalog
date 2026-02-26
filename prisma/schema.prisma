@@ -1,0 +1,100 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  MEMBER
+  COMPANY
+  ADMIN
+}
+
+enum VisibilityMode {
+  PUBLIC
+  MEMBERS_ONLY
+  WHITELIST
+}
+
+model User {
+  id               String    @id @default(cuid())
+  membershipId     String    @unique
+  name             String
+  age              Int?
+  gender           String?
+  address          String?
+  phone            String    @unique
+  email            String    @unique
+  occupation       String?
+  passwordHash     String
+  role             Role      @default(MEMBER)
+  emailVerifiedAt  DateTime?
+  createdAt        DateTime  @default(now())
+
+  company              Company?
+  productWhitelists    ProductWhitelist[]
+  emailVerificationTokens EmailVerificationToken[]
+
+  @@index([phone])
+  @@index([email])
+}
+
+model EmailVerificationToken {
+  id        String   @id @default(cuid())
+  userId    String
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([token])
+}
+
+model Company {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?
+  location    String?
+  images      String[]
+  ownerUserId String   @unique
+  createdAt   DateTime @default(now())
+
+  owner    User      @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+  products Product[]
+
+  @@index([slug])
+}
+
+model Product {
+  id             String         @id @default(cuid())
+  companyId      String
+  name           String
+  description    String?
+  images         String[]
+  price          Decimal?
+  category       String?
+  tags           String[]
+  isPublished    Boolean        @default(false)
+  visibilityMode VisibilityMode @default(PUBLIC)
+  createdAt      DateTime       @default(now())
+
+  company    Company            @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  whitelist  ProductWhitelist[]
+
+  @@index([companyId])
+}
+
+model ProductWhitelist {
+  id           String @id @default(cuid())
+  productId    String
+  memberUserId String
+
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  member  User    @relation(fields: [memberUserId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, memberUserId])
+}

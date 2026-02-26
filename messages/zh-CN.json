@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "companies": "陶艺公司",
+    "login": "登录",
+    "signup": "注册",
+    "account": "我的账户",
+    "logout": "退出登录",
+    "companyPortal": "企业门户"
+  },
+  "home": {
+    "hero": {
+      "title": "探索有田烧陶瓷",
+      "subtitle": "探索来自日本瓷器之都有田的数百年陶艺。",
+      "explore": "浏览产品",
+      "join": "成为会员"
+    },
+    "features": {
+      "exclusive": "专属访问",
+      "exclusiveDesc": "会员全年享有完整目录的访问权限，包含价格信息。",
+      "market": "有田陶器市",
+      "marketDesc": "4月29日至5月5日特别季节，所有访客均可访问。",
+      "authentic": "正宗工艺",
+      "authenticDesc": "直接从有田最优秀的陶瓷公司和窑场采购。"
+    }
+  },
+  "products": {
+    "title": "产品列表",
+    "subtitle": "探索我们的有田烧藏品",
+    "empty": "暂无产品",
+    "price": "价格",
+    "viewDetails": "查看详情",
+    "membersOnly": "仅限会员",
+    "category": "类别",
+    "tags": "标签",
+    "published": "已发布",
+    "draft": "草稿"
+  },
+  "companies": {
+    "title": "陶艺公司",
+    "subtitle": "认识有田烧背后的工匠",
+    "empty": "暂无公司注册",
+    "viewDetails": "查看详情",
+    "location": "位置",
+    "products": "产品"
+  },
+  "auth": {
+    "login": {
+      "title": "登录",
+      "phone": "电话号码",
+      "password": "密码",
+      "submit": "登录",
+      "noAccount": "还没有账户？",
+      "signupLink": "立即注册",
+      "error": "电话号码或密码不正确",
+      "unverified": "登录前请先验证您的电子邮件"
+    },
+    "signup": {
+      "title": "创建账户",
+      "name": "全名",
+      "email": "电子邮件地址",
+      "phone": "电话号码",
+      "password": "密码",
+      "age": "年龄",
+      "gender": "性别",
+      "address": "地址",
+      "occupation": "职业",
+      "submit": "创建账户",
+      "hasAccount": "已有账户？",
+      "loginLink": "登录",
+      "success": "账户已创建！请检查您的电子邮件以验证账户。",
+      "error": "创建账户失败，请重试。"
+    },
+    "verify": {
+      "title": "电子邮件验证",
+      "success": "您的电子邮件已验证！现在可以登录。",
+      "error": "验证链接无效或已过期，请重新注册。",
+      "loading": "正在验证您的电子邮件..."
+    }
+  },
+  "gate": {
+    "title": "仅限会员",
+    "subtitle": "此内容全年向会员开放，或在有田陶器市期间向所有访客开放。",
+    "loginCta": "登录您的账户",
+    "signupCta": "成为会员",
+    "or": "或",
+    "marketNote": "有田陶器市期间免费访问：4月29日 – 5月5日"
+  },
+  "account": {
+    "title": "我的账户",
+    "membershipId": "会员ID",
+    "profile": "个人资料",
+    "name": "全名",
+    "email": "电子邮件",
+    "phone": "电话",
+    "age": "年龄",
+    "gender": "性别",
+    "address": "地址",
+    "occupation": "职业",
+    "save": "保存更改",
+    "saved": "已保存！",
+    "role": "账户类型"
+  },
+  "company": {
+    "dashboard": {
+      "title": "企业仪表板",
+      "welcome": "欢迎来到您的企业门户",
+      "totalProducts": "产品总数",
+      "published": "已发布",
+      "drafts": "草稿"
+    },
+    "products": {
+      "title": "管理产品",
+      "add": "添加产品",
+      "edit": "编辑",
+      "delete": "删除",
+      "name": "产品名称",
+      "description": "描述",
+      "price": "价格（日元）",
+      "category": "类别",
+      "tags": "标签（逗号分隔）",
+      "images": "图片URL（每行一个）",
+      "visibility": "可见性",
+      "published": "发布",
+      "save": "保存产品",
+      "cancel": "取消",
+      "deleteConfirm": "确定要删除此产品吗？"
+    },
+    "settings": {
+      "title": "企业设置",
+      "companyName": "企业名称",
+      "description": "描述",
+      "location": "位置",
+      "images": "图片URL（每行一个）",
+      "save": "保存设置",
+      "saved": "设置已保存！"
+    },
+    "nav": {
+      "dashboard": "仪表板",
+      "products": "产品",
+      "settings": "设置"
+    }
+  },
+  "comingSoon": {
+    "title": "即将推出",
+    "subtitle": "此功能正在开发中，敬请期待！",
+    "back": "返回"
+  },
+  "footer": {
+    "copyright": "© 2025 有田陶瓷目录。版权所有。",
+    "comingSoon": "即将推出",
+    "purchase": "在线购买",
+    "booking": "窑场预约",
+    "chat": "聊天支持"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误，请重试。",
+    "success": "成功",
+    "cancel": "取消",
+    "save": "保存",
+    "edit": "编辑",
+    "delete": "删除",
+    "back": "返回",
+    "required": "此字段为必填项",
+    "public": "公开",
+    "membersOnly": "仅限会员",
+    "whitelist": "仅限白名单"
+  }
+}

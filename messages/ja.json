@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "products": "商品",
+    "companies": "窯元",
+    "login": "ログイン",
+    "signup": "会員登録",
+    "account": "マイアカウント",
+    "logout": "ログアウト",
+    "companyPortal": "企業ポータル"
+  },
+  "home": {
+    "hero": {
+      "title": "有田焼を探る",
+      "subtitle": "日本の磁器の都、有田から数百年の陶芸を探求しましょう。",
+      "explore": "商品を見る",
+      "join": "会員になる"
+    },
+    "features": {
+      "exclusive": "独占アクセス",
+      "exclusiveDesc": "会員は年間を通じて完全なカタログに価格情報付きでアクセスできます。",
+      "market": "有田陶器市",
+      "marketDesc": "4月29日〜5月5日の特別シーズンに全員がアクセス可能です。",
+      "authentic": "本物の職人技",
+      "authenticDesc": "有田の最高の窯元・陶芸家から直接調達しています。"
+    }
+  },
+  "products": {
+    "title": "商品一覧",
+    "subtitle": "有田焼のコレクションをご覧ください",
+    "empty": "商品がありません",
+    "price": "価格",
+    "viewDetails": "詳細を見る",
+    "membersOnly": "会員限定",
+    "category": "カテゴリー",
+    "tags": "タグ",
+    "published": "公開中",
+    "draft": "下書き"
+  },
+  "companies": {
+    "title": "窯元一覧",
+    "subtitle": "有田焼を生み出す職人たちをご紹介します",
+    "empty": "窯元が登録されていません",
+    "viewDetails": "詳細を見る",
+    "location": "所在地",
+    "products": "商品"
+  },
+  "auth": {
+    "login": {
+      "title": "ログイン",
+      "phone": "電話番号",
+      "password": "パスワード",
+      "submit": "ログイン",
+      "noAccount": "アカウントをお持ちでない方は",
+      "signupLink": "会員登録",
+      "error": "電話番号またはパスワードが正しくありません",
+      "unverified": "ログインする前にメールを確認してください"
+    },
+    "signup": {
+      "title": "アカウント作成",
+      "name": "氏名",
+      "email": "メールアドレス",
+      "phone": "電話番号",
+      "password": "パスワード",
+      "age": "年齢",
+      "gender": "性別",
+      "address": "住所",
+      "occupation": "職業",
+      "submit": "アカウントを作成",
+      "hasAccount": "すでにアカウントをお持ちの方は",
+      "loginLink": "ログイン",
+      "success": "アカウントが作成されました！メールを確認してアカウントを認証してください。",
+      "error": "アカウントの作成に失敗しました。もう一度お試しください。"
+    },
+    "verify": {
+      "title": "メール認証",
+      "success": "メールが確認されました！ログインできます。",
+      "error": "無効または期限切れの認証リンクです。再度登録してください。",
+      "loading": "メールを確認中..."
+    }
+  },
+  "gate": {
+    "title": "会員限定",
+    "subtitle": "このコンテンツは年間を通じて会員が閲覧できます。または有田陶器市期間中はどなたでもご覧いただけます。",
+    "loginCta": "アカウントにログイン",
+    "signupCta": "会員になる",
+    "or": "または",
+    "marketNote": "有田陶器市（4月29日〜5月5日）期間中は無料アクセス"
+  },
+  "account": {
+    "title": "マイアカウント",
+    "membershipId": "会員ID",
+    "profile": "プロフィール",
+    "name": "氏名",
+    "email": "メール",
+    "phone": "電話番号",
+    "age": "年齢",
+    "gender": "性別",
+    "address": "住所",
+    "occupation": "職業",
+    "save": "変更を保存",
+    "saved": "保存しました！",
+    "role": "アカウントタイプ"
+  },
+  "company": {
+    "dashboard": {
+      "title": "企業ダッシュボード",
+      "welcome": "企業ポータルへようこそ",
+      "totalProducts": "総商品数",
+      "published": "公開中",
+      "drafts": "下書き"
+    },
+    "products": {
+      "title": "商品管理",
+      "add": "商品を追加",
+      "edit": "編集",
+      "delete": "削除",
+      "name": "商品名",
+      "description": "説明",
+      "price": "価格（円）",
+      "category": "カテゴリー",
+      "tags": "タグ（カンマ区切り）",
+      "images": "画像URL（1行に1つ）",
+      "visibility": "公開設定",
+      "published": "公開する",
+      "save": "商品を保存",
+      "cancel": "キャンセル",
+      "deleteConfirm": "この商品を削除してもよろしいですか？"
+    },
+    "settings": {
+      "title": "企業設定",
+      "companyName": "企業名",
+      "description": "説明",
+      "location": "所在地",
+      "images": "画像URL（1行に1つ）",
+      "save": "設定を保存",
+      "saved": "設定を保存しました！"
+    },
+    "nav": {
+      "dashboard": "ダッシュボード",
+      "products": "商品",
+      "settings": "設定"
+    }
+  },
+  "comingSoon": {
+    "title": "近日公開",
+    "subtitle": "この機能は現在開発中です。お楽しみに！",
+    "back": "戻る"
+  },
+  "footer": {
+    "copyright": "© 2025 有田カタログ。All rights reserved.",
+    "comingSoon": "近日公開",
+    "purchase": "オンライン購入",
+    "booking": "窯元見学予約",
+    "chat": "チャットサポート"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました。もう一度お試しください。",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "edit": "編集",
+    "delete": "削除",
+    "back": "戻る",
+    "required": "この項目は必須です",
+    "public": "公開",
+    "membersOnly": "会員限定",
+    "whitelist": "ホワイトリストのみ"
+  }
+}

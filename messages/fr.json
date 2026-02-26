@@ -1,0 +1,171 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "companies": "Entreprises",
+    "login": "Connexion",
+    "signup": "S'inscrire",
+    "account": "Mon compte",
+    "logout": "Déconnexion",
+    "companyPortal": "Portail entreprise"
+  },
+  "home": {
+    "hero": {
+      "title": "Découvrez la poterie d'Arita",
+      "subtitle": "Explorez des siècles d'art céramique d'Arita, la capitale de la porcelaine japonaise.",
+      "explore": "Explorer les produits",
+      "join": "Devenir membre"
+    },
+    "features": {
+      "exclusive": "Accès exclusif",
+      "exclusiveDesc": "Les membres bénéficient d'un accès annuel au catalogue complet avec les détails de prix.",
+      "market": "Marché de poterie d'Arita",
+      "marketDesc": "Visitez-nous du 29 avril au 5 mai pour un accès saisonnier spécial.",
+      "authentic": "Artisanat authentique",
+      "authenticDesc": "Directement sourcé des meilleures entreprises de poterie d'Arita."
+    }
+  },
+  "products": {
+    "title": "Produits",
+    "subtitle": "Explorez notre collection de poterie d'Arita",
+    "empty": "Aucun produit disponible",
+    "price": "Prix",
+    "viewDetails": "Voir les détails",
+    "membersOnly": "Membres uniquement",
+    "category": "Catégorie",
+    "tags": "Tags",
+    "published": "Publié",
+    "draft": "Brouillon"
+  },
+  "companies": {
+    "title": "Entreprises",
+    "subtitle": "Rencontrez les artisans derrière la poterie d'Arita",
+    "empty": "Aucune entreprise répertoriée",
+    "viewDetails": "Voir les détails",
+    "location": "Localisation",
+    "products": "Produits"
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion",
+      "phone": "Numéro de téléphone",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "noAccount": "Vous n'avez pas de compte ?",
+      "signupLink": "S'inscrire",
+      "error": "Numéro de téléphone ou mot de passe invalide",
+      "unverified": "Veuillez vérifier votre e-mail avant de vous connecter"
+    },
+    "signup": {
+      "title": "Créer un compte",
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "password": "Mot de passe",
+      "age": "Âge",
+      "gender": "Genre",
+      "address": "Adresse",
+      "occupation": "Profession",
+      "submit": "Créer un compte",
+      "hasAccount": "Vous avez déjà un compte ?",
+      "loginLink": "Se connecter",
+      "success": "Compte créé ! Veuillez vérifier votre e-mail pour valider votre compte.",
+      "error": "Échec de la création du compte. Veuillez réessayer."
+    },
+    "verify": {
+      "title": "Vérification de l'e-mail",
+      "success": "Votre e-mail a été vérifié ! Vous pouvez maintenant vous connecter.",
+      "error": "Lien de vérification invalide ou expiré. Veuillez vous réinscrire.",
+      "loading": "Vérification de votre e-mail..."
+    }
+  },
+  "gate": {
+    "title": "Membres uniquement",
+    "subtitle": "Ce contenu est accessible aux membres toute l'année, ou à tous les visiteurs pendant le Marché de poterie d'Arita.",
+    "loginCta": "Connectez-vous à votre compte",
+    "signupCta": "Devenir membre",
+    "or": "ou",
+    "marketNote": "Accès gratuit pendant le Marché d'Arita : 29 avril – 5 mai"
+  },
+  "account": {
+    "title": "Mon compte",
+    "membershipId": "ID de membre",
+    "profile": "Profil",
+    "name": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "age": "Âge",
+    "gender": "Genre",
+    "address": "Adresse",
+    "occupation": "Profession",
+    "save": "Enregistrer les modifications",
+    "saved": "Modifications enregistrées !",
+    "role": "Type de compte"
+  },
+  "company": {
+    "dashboard": {
+      "title": "Tableau de bord entreprise",
+      "welcome": "Bienvenue sur votre portail entreprise",
+      "totalProducts": "Total des produits",
+      "published": "Publiés",
+      "drafts": "Brouillons"
+    },
+    "products": {
+      "title": "Gérer les produits",
+      "add": "Ajouter un produit",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "name": "Nom du produit",
+      "description": "Description",
+      "price": "Prix (JPY)",
+      "category": "Catégorie",
+      "tags": "Tags (séparés par des virgules)",
+      "images": "URLs d'images (une par ligne)",
+      "visibility": "Visibilité",
+      "published": "Publier",
+      "save": "Enregistrer le produit",
+      "cancel": "Annuler",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce produit ?"
+    },
+    "settings": {
+      "title": "Paramètres de l'entreprise",
+      "companyName": "Nom de l'entreprise",
+      "description": "Description",
+      "location": "Localisation",
+      "images": "URLs d'images (une par ligne)",
+      "save": "Enregistrer les paramètres",
+      "saved": "Paramètres enregistrés !"
+    },
+    "nav": {
+      "dashboard": "Tableau de bord",
+      "products": "Produits",
+      "settings": "Paramètres"
+    }
+  },
+  "comingSoon": {
+    "title": "Bientôt disponible",
+    "subtitle": "Cette fonctionnalité est en cours de développement. Restez à l'écoute !",
+    "back": "Retour"
+  },
+  "footer": {
+    "copyright": "© 2025 Arita Catalog. Tous droits réservés.",
+    "comingSoon": "Bientôt",
+    "purchase": "Achat en ligne",
+    "booking": "Réservation de four",
+    "chat": "Support chat"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite. Veuillez réessayer.",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "back": "Retour",
+    "required": "Ce champ est obligatoire",
+    "public": "Public",
+    "membersOnly": "Membres uniquement",
+    "whitelist": "Liste blanche uniquement"
+  }
+}
