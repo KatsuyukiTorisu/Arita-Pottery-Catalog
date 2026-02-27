@@ -1,177 +1,107 @@
-# Arita Catalog
+# 有田焼カタログ / Arita Pottery Catalog
 
-A production-ready, member-only product catalog for Arita pottery companies.
+有田焼の窯元・販売会社の商品を掲載する会員制オンラインカタログです。
+会員は通年で商品詳細を閲覧でき、非会員は有田陶器市期間（4月29日〜5月5日）のみ詳細ページにアクセスできます。
 
-## Features
+> A member-only online catalog for Arita pottery companies. Members have year-round access; non-members can only view details during the Arita Pottery Market (April 29–May 5).
 
-- **Multi-locale** — 8 languages (en, ja, ko, zh-CN, zh-TW, fr, de, id) via `next-intl`
-- **Custom JWT auth** — httpOnly cookie, 30-day sessions with `jose`
-- **RBAC** — Three roles: MEMBER, COMPANY, ADMIN
-- **Access gating** — Detail pages require membership or April 29–May 5 market period
-- **Company portal** — CRUD product management, company settings
-- **Email verification** — Required before first login via Nodemailer
+---
 
-## Stack
-
-| Layer       | Tech                         |
-|-------------|------------------------------|
-| Framework   | Next.js 16 (App Router)      |
-| Language    | TypeScript 5                 |
-| Styling     | Tailwind CSS 4 (CSS-first)   |
-| Database    | PostgreSQL + Prisma 7        |
-| Auth        | `jose` JWT + httpOnly cookie |
-| i18n        | `next-intl` 4                |
-| Validation  | `zod` 4                      |
-| Email       | Nodemailer 8                 |
-
-## Quick Start
-
-### 1. Clone and install
+## クイックスタート
 
 ```bash
-git clone <repo>
-cd arita-catalog
 npm install
-```
-
-### 2. Set up environment
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` with your values:
-
-```env
-DATABASE_URL="postgresql://user:pass@localhost:5432/arita_catalog"
-JWT_SECRET="your-32-char-minimum-secret-here"
-SMTP_HOST="smtp.example.com"
-SMTP_PORT="587"
-SMTP_USER="no-reply@example.com"
-SMTP_PASS="your-smtp-password"
-SMTP_FROM="Arita Catalog <no-reply@example.com>"
-BASE_URL="http://localhost:3000"
-TZ="Asia/Tokyo"
-```
-
-### 3. Set up database
-
-```bash
+cp .env.example .env        # .env を編集して DATABASE_URL 等を設定
 npx prisma migrate dev --name init
 npx prisma db seed
-```
-
-### 4. Start development server
-
-```bash
 npm run dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) — it redirects to `/en`.
+ブラウザで **http://localhost:3000** を開いてください。
 
-## Seed Accounts
+---
 
-| Role    | Phone          | Password    | Email                  |
-|---------|----------------|-------------|------------------------|
-| ADMIN   | +81-0000-0001  | Admin123!   | admin@arita-catalog.jp |
-| COMPANY | +81-0000-0002  | Company123! | company@pottery.jp     |
-| MEMBER  | +81-0000-0003  | Member123!  | member@example.com     |
+## デモアカウント
 
-All seed accounts are pre-verified (no email verification required for seeds).
+| ロール | 電話番号 | パスワード | メール |
+|--------|---------|-----------|-------|
+| 管理者 | +81-0000-0001 | Admin123! | admin@arita-catalog.jp |
+| 会社 | +81-0000-0002 | Company123! | company@pottery.jp |
+| 会員 | +81-0000-0003 | Member123! | member@example.com |
 
-## Test Scenarios
+---
 
-### Gating
-1. Log out and visit `/en/products/[id]`
-2. Outside April 29–May 5 → shows **gate page**
-3. During market period (or override date) → shows **full product detail**
+## 機能一覧
 
-### Signup flow
-1. Visit `/en/auth/signup`, fill form
-2. Get "check email" confirmation
-3. Click verify link → redirected to success
-4. Login with phone + password
+- **会員制アクセス制御** — 詳細ページは会員のみ（または有田陶器市期間中）閲覧可
+- **8言語対応** — 日本語・英語・韓国語・中国語（簡体・繁体）・フランス語・ドイツ語・インドネシア語
+- **会社ポータル** — 商品の登録・編集・削除、公開設定（PUBLIC / 会員限定 / ホワイトリスト）
+- **メール認証** — 会員登録後にメール確認が必要
+- **JWT 認証** — httpOnly Cookie による安全なセッション管理（30日）
 
-### RBAC
-- Login as **MEMBER** → redirected to `/en/account`
-- Login as **COMPANY** → redirected to `/en/company`
-- MEMBER cannot access `/en/company` → redirected to login
+---
 
-### i18n
-- Toggle language via header dropdown
-- All labels change to selected locale
-- URL changes from `/en/...` to `/ja/...` etc.
+## 技術スタック
 
-## Access Control Policy
+| カテゴリ | 技術 | バージョン |
+|---------|------|-----------|
+| フレームワーク | Next.js (App Router) | 16.1.6 |
+| 言語 | TypeScript | 5.x |
+| スタイリング | Tailwind CSS | 4.x |
+| 国際化 | next-intl | 4.8.x |
+| データベース | PostgreSQL + Prisma | 7.4.x |
+| 認証 | jose (JWT) | 6.x |
+| バリデーション | Zod | 4.x |
+| メール | Nodemailer | 8.x |
 
-| Page                  | Public | Market Period | Member |
-|-----------------------|--------|---------------|--------|
-| `/products` (list)    | ✅     | ✅            | ✅     |
-| `/companies` (list)   | ✅     | ✅            | ✅     |
-| `/products/[id]`      | ❌     | ✅            | ✅     |
-| `/companies/[slug]`   | ❌     | ✅            | ✅     |
-| `/account`            | ❌     | ❌            | ✅     |
-| `/company/**`         | ❌     | ❌            | COMPANY/ADMIN only |
+---
 
-Market period: **April 29 – May 5** (uses server local time, set `TZ=Asia/Tokyo`).
+## アクセス制御
 
-## Project Structure
+| ページ | 未ログイン | 市期間中 | 会員 | 会社/管理者 |
+|--------|----------|---------|------|-----------|
+| 商品一覧 | ✅ | ✅ | ✅ | ✅ |
+| 商品詳細 | ❌ | ✅ | ✅ | ✅ |
+| 会社一覧 | ✅ | ✅ | ✅ | ✅ |
+| 会社詳細 | ❌ | ✅ | ✅ | ✅ |
+| アカウント | ❌ | ❌ | ✅ | ✅ |
+| 会社ポータル | ❌ | ❌ | ❌ | ✅ |
 
-```
-arita-catalog/
-├── prisma/
-│   ├── schema.prisma          # DB schema
-│   └── seed.ts                # Seed data
-├── messages/                  # i18n translations (8 locales)
-├── src/
-│   ├── middleware.ts           # Locale + auth middleware
-│   ├── i18n/
-│   │   ├── routing.ts         # next-intl locale config
-│   │   └── request.ts         # Server-side i18n config
-│   ├── types/index.ts         # Shared TypeScript types
-│   ├── lib/
-│   │   ├── db.ts              # Prisma singleton
-│   │   ├── auth.ts            # JWT sign/verify/session
-│   │   ├── email.ts           # Nodemailer helpers
-│   │   ├── access-control.ts  # isMarketPeriod, canViewDetail
-│   │   ├── validations.ts     # Zod schemas
-│   │   └── utils.ts           # Helpers
-│   ├── components/
-│   │   ├── layout/            # Header, Footer, LanguageSwitcher
-│   │   ├── ui/                # Button, Input, Select, GatePage
-│   │   ├── auth/              # LoginForm, SignupForm
-│   │   ├── products/          # ProductCard, ProductForm
-│   │   └── companies/         # CompanyCard, CompanyForm
-│   └── app/
-│       ├── [locale]/          # All locale-prefixed routes
-│       └── api/               # REST API routes
-└── .env.example
-```
+有田陶器市期間: **4月29日〜5月5日**（`TZ=Asia/Tokyo` 推奨）
 
-## API Reference
+---
 
-| Method | Endpoint                     | Auth         | Description           |
-|--------|------------------------------|--------------|-----------------------|
-| POST   | `/api/auth/signup`           | Public       | Register new user     |
-| POST   | `/api/auth/login`            | Public       | Login (returns cookie)|
-| POST   | `/api/auth/logout`           | Public       | Clear auth cookie     |
-| GET    | `/api/auth/verify?token=`    | Public       | Verify email          |
-| GET    | `/api/account`               | Required     | Get profile           |
-| PUT    | `/api/account`               | Required     | Update profile        |
-| GET    | `/api/companies`             | Public       | List companies        |
-| POST   | `/api/companies`             | COMPANY/ADMIN| Create company        |
-| GET    | `/api/companies/[slug]`      | Public       | Get company detail    |
-| PUT    | `/api/companies/[slug]`      | Owner/ADMIN  | Update company        |
-| DELETE | `/api/companies/[slug]`      | Owner/ADMIN  | Delete company        |
-| GET    | `/api/products`              | Public       | List products         |
-| POST   | `/api/products`              | COMPANY/ADMIN| Create product        |
-| GET    | `/api/products/[id]`         | Varies       | Get product           |
-| PUT    | `/api/products/[id]`         | Owner/ADMIN  | Update product        |
-| DELETE | `/api/products/[id]`         | Owner/ADMIN  | Delete product        |
+## ドキュメント
 
-## Development Notes
+| ファイル | 内容 |
+|---------|------|
+| [docs/USER_MANUAL.md](docs/USER_MANUAL.md) | 取り扱い説明書（エンドユーザー向け）|
+| [docs/SPEC.md](docs/SPEC.md) | 技術仕様書（開発者向け）|
+| [docs/SETUP.md](docs/SETUP.md) | セットアップガイド |
 
-- **Tailwind 4**: Uses CSS-first config via `@theme` in `globals.css`. No `tailwind.config.ts` needed.
-- **Prisma 7**: Run `npx prisma generate` after schema changes.
-- **Email in dev**: Use [Mailtrap](https://mailtrap.io) for email testing. Signup still creates the user even if email fails.
-- **Market period testing**: Modify `isMarketPeriod()` in `src/lib/access-control.ts` to return `true` for local testing.
+---
+
+## API エンドポイント
+
+| Method | エンドポイント | 認証 | 説明 |
+|--------|-------------|------|------|
+| POST | `/api/auth/signup` | 不要 | 会員登録 |
+| POST | `/api/auth/login` | 不要 | ログイン |
+| POST | `/api/auth/logout` | 不要 | ログアウト |
+| GET | `/api/auth/verify?token=` | 不要 | メール認証 |
+| GET | `/api/account` | 必要 | プロフィール取得 |
+| PUT | `/api/account` | 必要 | プロフィール更新 |
+| GET | `/api/companies` | 不要 | 会社一覧 |
+| POST | `/api/companies` | COMPANY/ADMIN | 会社作成 |
+| GET | `/api/companies/[slug]` | 不要 | 会社詳細 |
+| PUT | `/api/companies/[slug]` | オーナー/ADMIN | 会社更新 |
+| DELETE | `/api/companies/[slug]` | オーナー/ADMIN | 会社削除 |
+| GET | `/api/products` | 不要 | 商品一覧 |
+| POST | `/api/products` | COMPANY/ADMIN | 商品作成 |
+| GET | `/api/products/[id]` | 条件あり | 商品詳細 |
+| PUT | `/api/products/[id]` | オーナー/ADMIN | 商品更新 |
+| DELETE | `/api/products/[id]` | オーナー/ADMIN | 商品削除 |
+
+---
+
+© 2026 Arita Catalog. All rights reserved.

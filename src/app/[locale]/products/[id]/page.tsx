@@ -22,14 +22,14 @@ export default async function ProductDetailPage({ params }: Props) {
   }
 
   const product = await db.product.findUnique({
-    where: { id, isPublished: true },
+    where: { id },
     include: {
       company: true,
       whitelist: { select: { memberUserId: true } },
     },
   });
 
-  if (!product) notFound();
+  if (!product || !product.isPublished) notFound();
 
   // Visibility checks for logged-in users
   if (product.visibilityMode === 'MEMBERS_ONLY' && !session) {
