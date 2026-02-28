@@ -4,6 +4,7 @@ import { useState, FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
 import Input from '@/components/ui/Input';
 import Button from '@/components/ui/Button';
+import ImageUploader from '@/components/ui/ImageUploader';
 import type { CompanyData } from '@/types';
 
 interface CompanyFormProps {
@@ -19,8 +20,8 @@ export default function CompanyForm({ company, onSave }: CompanyFormProps) {
     name: company?.name ?? '',
     description: company?.description ?? '',
     location: company?.location ?? '',
-    images: company?.images?.join('\n') ?? '',
   });
+  const [images, setImages] = useState<string[]>(company?.images ?? []);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [saved, setSaved] = useState(false);
@@ -39,7 +40,7 @@ export default function CompanyForm({ company, onSave }: CompanyFormProps) {
         name: form.name,
         description: form.description || undefined,
         location: form.location || undefined,
-        images: form.images.split('\n').map((u) => u.trim()).filter(Boolean),
+        images,
       };
 
       const url = company?.slug ? `/api/companies/${company.slug}` : '/api/companies';
@@ -91,13 +92,7 @@ export default function CompanyForm({ company, onSave }: CompanyFormProps) {
 
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">{t('images')}</label>
-        <textarea
-          value={form.images}
-          onChange={handleChange('images')}
-          rows={3}
-          placeholder="https://example.com/image.jpg"
-          className="block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-mono text-sm"
-        />
+        <ImageUploader images={images} onChange={setImages} />
       </div>
 
       <Button type="submit" loading={loading}>{t('save')}</Button>

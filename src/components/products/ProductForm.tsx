@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, FormEvent, useEffect } from 'react';
+import { useState, FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
 import Input from '@/components/ui/Input';
 import Button from '@/components/ui/Button';
 import Select from '@/components/ui/Select';
+import ImageUploader from '@/components/ui/ImageUploader';
 import type { ProductData } from '@/types';
 
 interface ProductFormProps {
@@ -24,10 +25,10 @@ export default function ProductForm({ product, companyId, onSave, onCancel }: Pr
     price: product?.price != null ? String(product.price) : '',
     category: product?.category ?? '',
     tags: product?.tags?.join(', ') ?? '',
-    images: product?.images?.join('\n') ?? '',
     isPublished: product?.isPublished ?? false,
     visibilityMode: product?.visibilityMode ?? 'PUBLIC',
   });
+  const [images, setImages] = useState<string[]>(product?.images ?? []);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -48,7 +49,7 @@ export default function ProductForm({ product, companyId, onSave, onCancel }: Pr
         price: form.price ? parseFloat(form.price) : undefined,
         category: form.category || undefined,
         tags: form.tags.split(',').map((t) => t.trim()).filter(Boolean),
-        images: form.images.split('\n').map((u) => u.trim()).filter(Boolean),
+        images,
         isPublished: form.isPublished,
         visibilityMode: form.visibilityMode,
         companyId,
@@ -109,13 +110,7 @@ export default function ProductForm({ product, companyId, onSave, onCancel }: Pr
 
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">{t('images')}</label>
-        <textarea
-          value={form.images}
-          onChange={handleChange('images')}
-          rows={3}
-          placeholder="https://example.com/image1.jpg"
-          className="block w-full rounded-lg border border-gray-300 px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent font-mono text-sm"
-        />
+        <ImageUploader images={images} onChange={setImages} />
       </div>
 
       <Select
