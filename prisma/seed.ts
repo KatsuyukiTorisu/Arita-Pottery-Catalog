@@ -3,7 +3,9 @@ import { PrismaPg } from '@prisma/adapter-pg';
 import bcrypt from 'bcryptjs';
 import 'dotenv/config';
 
-const adapter = new PrismaPg({ connectionString: process.env.DATABASE_URL! });
+const url = process.env.DATABASE_URL;
+if (!url) throw new Error('DATABASE_URL is not set');
+const adapter = new PrismaPg({ connectionString: url });
 const prisma = new PrismaClient({ adapter });
 
 function generateMembershipId(prefix: string): string {
@@ -15,12 +17,12 @@ function generateMembershipId(prefix: string): string {
 async function main() {
   console.log('🌱 Seeding database...');
 
-  // Clean up
-  await prisma.productWhitelist.deleteMany();
-  await prisma.product.deleteMany();
-  await prisma.company.deleteMany();
-  await prisma.emailVerificationToken.deleteMany();
-  await prisma.user.deleteMany();
+  // Idempotent: skip if data already exists
+  const existingUser = await prisma.user.findFirst({ where: { phone: '+81-0000-0001' } });
+  if (existingUser) {
+    console.log('✅ Seed already applied — skipping.');
+    return;
+  }
 
   const now = new Date();
 
